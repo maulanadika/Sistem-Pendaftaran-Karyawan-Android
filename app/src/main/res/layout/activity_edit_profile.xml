@@ -1,0 +1,412 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg"
+    tools:context=".Activities.EditProfileActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".activities.LoginActivity">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="32dp"
+            tools:context=".activities.LoginActivity">
+
+    <View
+        android:id="@+id/view3"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:background="@color/bg"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="@+id/view3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/ic_back"
+            android:layout_width="15dp"
+            android:layout_height="24dp"
+            android:background="@drawable/ic_back"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="48dp"
+            android:text="Edit Profil"
+            android:textColor="@color/font"
+            android:textSize="18sp"
+            android:fontFamily="@font/roboto_bold"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="40dp"
+        android:gravity="end"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="@+id/view3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/imgEdit_profile"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:background="@drawable/ic_confirm" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/Style"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view3">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="NIK"
+                android:layout_marginStart="24dp"
+                android:textColor="@color/register"
+                android:fontFamily="@font/montserrat_bold"
+                android:textSize="14sp"/>
+
+            <EditText
+                android:id="@+id/nik"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="@drawable/bg_form_register"
+                android:fontFamily="@font/roboto"
+                android:layout_marginTop="12dp"
+                android:hint="NIK"
+                android:inputType="number"
+                android:paddingStart="24dp"
+                android:paddingEnd="16dp"
+                android:textColor="@color/bg"
+                android:textColorHint="@color/register"
+                android:textSize="12sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nama Lengkap"
+                android:layout_marginStart="24dp"
+                android:textColor="@color/font"
+                android:fontFamily="@font/montserrat_bold"
+                android:textSize="14sp"/>
+
+            <EditText
+                android:id="@+id/nama"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="@drawable/bg_form_register"
+                android:fontFamily="@font/roboto"
+                android:layout_marginTop="12dp"
+                android:hint="Nama Lengkap"
+                android:inputType="number"
+                android:paddingStart="24dp"
+                android:paddingEnd="16dp"
+                android:textColor="@color/bg"
+                android:textColorHint="@color/register"
+                android:textSize="12sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Username"
+                android:layout_marginStart="24dp"
+                android:textColor="@color/register"
+                android:fontFamily="@font/montserrat_bold"
+                android:textSize="14sp"/>
+
+            <EditText
+                android:id="@+id/username"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="@drawable/bg_form_register"
+                android:fontFamily="@font/roboto"
+                android:layout_marginTop="12dp"
+                android:hint="Username"
+                android:inputType="number"
+                android:paddingStart="24dp"
+                android:paddingEnd="16dp"
+                android:textColor="@color/bg"
+                android:textColorHint="@color/register"
+                android:textSize="12sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Jenis Kelamin"
+                android:layout_marginStart="24dp"
+                android:textColor="@color/register"
+                android:fontFamily="@font/montserrat_bold"
+                android:textSize="14sp"/>
+
+            <EditText
+                android:id="@+id/jeniskelamin"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="@drawable/bg_form_register"
+                android:fontFamily="@font/roboto"
+                android:layout_marginTop="12dp"
+                android:hint="Laki-laki"
+                android:inputType="number"
+                android:paddingStart="24dp"
+                android:paddingEnd="16dp"
+                android:textColor="@color/bg"
+                android:textColorHint="@color/register"
+                android:textSize="12sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Email"
+                android:layout_marginStart="24dp"
+                android:textColor="@color/font"
+                android:fontFamily="@font/montserrat_bold"
+                android:textSize="14sp"/>
+
+            <EditText
+                android:id="@+id/email"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="@drawable/bg_form_register"
+                android:fontFamily="@font/roboto"
+                android:layout_marginTop="12dp"
+                android:hint="Email"
+                android:inputType="number"
+                android:paddingStart="24dp"
+                android:paddingEnd="16dp"
+                android:textColor="@color/bg"
+                android:textColorHint="@color/register"
+                android:textSize="12sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Alamat"
+                android:layout_marginStart="24dp"
+                android:textColor="@color/font"
+                android:fontFamily="@font/montserrat_bold"
+                android:textSize="14sp"/>
+
+            <EditText
+                android:id="@+id/alamat"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="@drawable/bg_form_register"
+                android:fontFamily="@font/roboto"
+                android:layout_marginTop="12dp"
+                android:hint="Alamat"
+                android:inputType="number"
+                android:paddingStart="24dp"
+                android:paddingEnd="16dp"
+                android:textColor="@color/bg"
+                android:textColorHint="@color/register"
+                android:textSize="12sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pendidikan"
+                android:layout_marginStart="24dp"
+                android:textColor="@color/font"
+                android:fontFamily="@font/montserrat_bold"
+                android:textSize="14sp"/>
+
+            <EditText
+                android:id="@+id/pendidikan"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="@drawable/bg_form_register"
+                android:fontFamily="@font/roboto"
+                android:layout_marginTop="12dp"
+                android:hint="Pendidikan"
+                android:inputType="number"
+                android:paddingStart="24dp"
+                android:paddingEnd="16dp"
+                android:textColor="@color/bg"
+                android:textColorHint="@color/register"
+                android:textSize="12sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nomor Handphone"
+                android:layout_marginStart="24dp"
+                android:textColor="@color/font"
+                android:fontFamily="@font/montserrat_bold"
+                android:textSize="14sp"/>
+
+            <EditText
+                android:id="@+id/nohp"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="@drawable/bg_form_register"
+                android:fontFamily="@font/roboto"
+                android:layout_marginTop="12dp"
+                android:hint="Nomor Handphone"
+                android:inputType="number"
+                android:paddingStart="24dp"
+                android:paddingEnd="16dp"
+                android:textColor="@color/bg"
+                android:textColorHint="@color/register"
+                android:textSize="12sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tanggal Lahir"
+                android:layout_marginStart="24dp"
+                android:textColor="@color/register"
+                android:fontFamily="@font/montserrat_bold"
+                android:textSize="14sp"/>
+
+            <EditText
+                android:id="@+id/date"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="@drawable/bg_form_register"
+                android:fontFamily="@font/roboto"
+                android:layout_marginTop="12dp"
+                android:hint="Tanggal Lahir"
+                android:inputType="number"
+                android:paddingStart="24dp"
+                android:paddingEnd="16dp"
+                android:textColor="@color/bg"
+                android:textColorHint="@color/register"
+                android:textSize="12sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Password"
+                android:layout_marginStart="24dp"
+                android:textColor="@color/font"
+                android:fontFamily="@font/montserrat_bold"
+                android:textSize="14sp"/>
+
+            <EditText
+                android:id="@+id/Password"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="@drawable/bg_form_register"
+                android:fontFamily="@font/roboto"
+                android:layout_marginTop="12dp"
+                android:hint="Password"
+                android:inputType="number"
+                android:paddingStart="24dp"
+                android:paddingEnd="16dp"
+                android:textColor="@color/bg"
+                android:textColorHint="@color/register"
+                android:textSize="12sp" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
