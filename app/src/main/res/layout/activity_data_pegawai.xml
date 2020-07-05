@@ -1,0 +1,39 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingStart="16dp"
+    android:paddingEnd="16dp"
+    android:background="@color/bg_app"
+    android:paddingTop="16dp"
+    android:paddingBottom="16dp"
+    tools:context=".Activities.DataPegawaiActivity">
+
+    <Button
+        android:id="@+id/btn_back"
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+        android:textColor="@color/font"
+        android:background="@drawable/bg_btn_login"
+        android:text="BACK"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TAMPILAN DAFTAR PEGAWAI"
+        android:layout_gravity="center"
+        android:fontFamily="@font/roboto_bold"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="8dp"
+        android:textSize="14sp"
+        android:textColor="@android:color/black"/>
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/listView"
+        tools:listitem="@layout/list_data"/>
+
+</LinearLayout>
